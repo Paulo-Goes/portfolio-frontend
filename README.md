@@ -18,26 +18,19 @@ Make a fullstack portfolio website where:
 
 ## Implemented Features
 
-- Skills filtered by the area category
-  - DevOps
-  - Software Development
-  - Etc...
-- Contact me
-  - Name
-  - Email
-  - Message
-- REST API
-- Security(Access control)
+- Landing page
+  - Education
+  - Skills
+- Placeholders for other features
 
 ## Planned features
 
-- Add projects
-- Add games
+- Add contact me page
+- Add projects section
+- Add games page
 
 ## Much later/Non confirmed features
 
 - Add a export CV functionality
   - User would receive a .pdf CV taking into consideration the specified skill area
-- Animations
-- My status(Open to work, working, etc...)
 - Quote of the day
