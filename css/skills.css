@@ -191,6 +191,5 @@
 }
 .level-not-specified {
   color: red;
-  background: var(--accent);
   border: 1px solid red;
 }
