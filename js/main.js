@@ -111,11 +111,12 @@ function openCat(id) {
         others.classList.add("show");
         setTimeout(() => {
           content.classList.add("show");
+          panel.style.height = panel.scrollHeight + "px";
+          animating = false;
         }, 80);
         panel.classList.remove("animating");
         expanded = true;
         current = id;
-        animating = false;
       }, 400);
     }),
   );
@@ -145,6 +146,7 @@ function switchCat(id) {
     others.classList.add("show");
     setTimeout(() => {
       content.classList.add("show");
+      panel.style.height = panel.scrollHeight + "px";
       animating = false;
     }, 80);
   }, 200);
