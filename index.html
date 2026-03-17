@@ -3,15 +3,107 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial scale=1.0" />
-    <title>Paulo Góes</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <title>Paulo Sérgio</title>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/education.css" />
+    <link rel="stylesheet" href="css/skills.css" />
+    <link rel="stylesheet" href="css/projects.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="contact.html">Contact</a>
+    <nav class="navbar">
+      <a href="index.html" class="nav-logo">PAULO SÉRGIO</a>
+      <div class="nav-links">
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <div class="nav-divider"></div>
+        <a href="games.html">Games</a>
+        <a href="contact.html">Contact me</a>
+      </div>
     </nav>
-    <h1>Hello World</h1>
+
+    <section id="home">
+      <div class="home-container">
+        <div class="home-content">
+          <span class="home-tag">Software Developer</span>
+          <h1 class="home-tittle">
+            FULLSTACK<br />
+            <span class="home-outline">DEVOPS</span><br />
+            AND MORE
+          </h1>
+          <p class="home-sub">
+            Passionate about clean code and reliable systems. Crafting backends
+            with Java and Spring Boot, and bringing them to life on the web.
+          </p>
+          <div class="home-tags">
+            <span>Java</span>
+            <span>Spring Boot</span>
+            <span>PostgreSQL</span>
+            <span>JavaScript</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">Background</span>
+          <h2 class="section-title">Education</h2>
+        </div>
+        <div class="education-list">
+          <div class="education-card">
+            <div class="education-top">
+              <div>
+                <a
+                  href="https://portal.unicap.br/w/ciencia-da-computacao"
+                  target="_blank"
+                  class="education-degree"
+                >
+                  Computer Science - Bachelor's Degree
+                </a>
+                <br />
+                <a
+                  href="https://portal.unicap.br/"
+                  target="_blank"
+                  class="education-institution"
+                >
+                  Catholic University of Pernambuco
+                </a>
+              </div>
+              <span class="education-date">Expected by 2026.2</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">What I know</span>
+          <h2 class="section-title">Skills</h2>
+        </div>
+        <div class="skills-area" id="skills-area">
+          <div class="cat-row" id="cat-row"></div>
+          <div class="exp-panel" id="exp-panel">
+            <div class="exp-top">
+              <span class="exp-active-label" id="exp-label"></span>
+              <div class="exp-other-btns" id="exp-others"></div>
+            </div>
+            <div class="exp-content" id="exp-content">
+              <div class="skill-grid" id="skill-grid"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <script src="js/main.js"></script>
   </body>
