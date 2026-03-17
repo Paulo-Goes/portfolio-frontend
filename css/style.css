@@ -6,7 +6,7 @@
   --accent-hover: #d97706;
   --text-primary: #ffffff;
   --text-secondary: #9c9c9c;
-  --border: #1a1a2e;
+  --border: #313157;
   --font-display: "Bebas Neue", sans-serif;
   --font-body: "DM Sans", sans-serif;
 }
@@ -68,6 +68,13 @@ body {
 
 .nav-links a:hover {
   color: var(--accent);
+}
+
+.nav-divider {
+  width: 1px;
+  height: 16px;
+  background: var(--border);
+  align-self: center;
 }
 
 #home {
@@ -149,7 +156,7 @@ body {
   font-size: 12px;
   letter-spacing: 1px;
   color: var(--text-secondary);
-  border: 1px solid var(--border);
+  border: 2px solid var(--border);
   padding: 5px 14px;
   border-radius: 20px;
 }
@@ -207,13 +214,24 @@ body {
   font-size: 18px;
   font-weight: 500;
   color: var(--text-primary);
-  margin-bottom: 6px;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.education-degree:hover {
+  color: var(--accent);
 }
 
 .education-institution {
   font-size: 13px;
   color: var(--text-secondary);
   letter-spacing: 1px;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.education-institution:hover {
+  color: var(--accent);
 }
 
 .education-date {
