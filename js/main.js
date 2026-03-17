@@ -4,21 +4,23 @@ let current = null;
 let expanded = false;
 let animating = false;
 
-function lc(l) {
-  if (l === "Advanced") return "level-advanced";
-  if (l === "Intermediate") return "level-intermediate";
-  return "level-beginner";
+function getLevel(l) {
+  if (l === 4) return "Expert";
+  if (l === 3) return "Advanced";
+  if (l === 2) return "Intermediate";
+  if (l === 1) return "Beginner";
+  return "Not Specified";
 }
 
 function renderSkills(skills) {
   document.getElementById("skill-grid").innerHTML = skills
-    .map(
-      (s) =>
-        `<div class="skill-item">
+    .map((s) => {
+      const level = getLevel(s.level);
+      return `<div class="skill-item">
             <span class="skill-name">${s.name}</span>
-            <span class="skill-level ${lc(s.level)}">${s.level}</span>
-        </div>`,
-    )
+            <span class="skill-level level-${level}">${level.charAt(0).toUpperCase() + level.slice(1)}</span>
+        </div>`;
+    })
     .join("");
 }
 
