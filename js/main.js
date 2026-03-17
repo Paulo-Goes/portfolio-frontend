@@ -125,6 +125,7 @@ function openCat(id) {
 function switchCat(id) {
   if (animating || id === current) return;
   animating = true;
+  const panel = document.getElementById("exp-panel");
   const cat = categoriesData.find((c) => c.id === id);
   const content = document.getElementById("exp-content");
   const label = document.getElementById("exp-label");
