@@ -5,11 +5,11 @@ let expanded = false;
 let animating = false;
 
 function getLevel(l) {
-  if (l === 4) return "Expert";
-  if (l === 3) return "Advanced";
-  if (l === 2) return "Intermediate";
-  if (l === 1) return "Beginner";
-  return "Not Specified";
+  if (l === 4) return "expert";
+  if (l === 3) return "advanced";
+  if (l === 2) return "intermediate";
+  if (l === 1) return "beginner";
+  return "not-specified";
 }
 
 function renderSkills(skills) {
