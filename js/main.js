@@ -111,11 +111,12 @@ function openCat(id) {
         others.classList.add("show");
         setTimeout(() => {
           content.classList.add("show");
+          panel.style.height = panel.scrollHeight + "px";
+          animating = false;
         }, 80);
         panel.classList.remove("animating");
         expanded = true;
         current = id;
-        animating = false;
       }, 400);
     }),
   );
@@ -124,6 +125,7 @@ function openCat(id) {
 function switchCat(id) {
   if (animating || id === current) return;
   animating = true;
+  const panel = document.getElementById("exp-panel");
   const cat = categoriesData.find((c) => c.id === id);
   const content = document.getElementById("exp-content");
   const label = document.getElementById("exp-label");
@@ -145,6 +147,7 @@ function switchCat(id) {
     others.classList.add("show");
     setTimeout(() => {
       content.classList.add("show");
+      panel.style.height = panel.scrollHeight + "px";
       animating = false;
     }, 80);
   }, 200);
