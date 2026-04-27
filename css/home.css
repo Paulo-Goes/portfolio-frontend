@@ -81,3 +81,15 @@
   padding: 5px 14px;
   border-radius: 20px;
 }
+
+.home-link {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.home-link:hover {
+  color: var(--accent);
+}

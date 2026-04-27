@@ -1,6 +1,6 @@
 :root {
-  --bg-primary: #0a0a0f;
-  --bg-secondary: #111118;
+  --bg-primary: #0f1623;
+  --bg-secondary: #151e2e;
   --bg-card: #16161f;
   --accent: #f59e0b;
   --accent-hover: #d97706;
@@ -27,4 +27,29 @@ body {
   font-family: var(--font-body);
   font-size: 16px;
   line-height: 1.6;
+}
+
+.section-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.section-header {
+  margin-bottom: 48px;
+}
+
+.section-tag {
+  font-size: 11px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--accent);
+  display: block;
+  margin-bottom: 8px;
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: 48px;
+  letter-spacing: 2px;
+  color: var(--text-primary);
 }

@@ -3,31 +3,6 @@
   background: var(--bg-secondary);
 }
 
-.section-container {
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-.section-header {
-  margin-bottom: 48px;
-}
-
-.section-tag {
-  font-size: 11px;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  color: var(--accent);
-  display: block;
-  margin-bottom: 8px;
-}
-
-.section-title {
-  font-family: var(--font-display);
-  font-size: 48px;
-  letter-spacing: 2px;
-  color: var(--text-primary);
-}
-
 .education-card {
   background: var(--bg-card);
   border: 1px solid var(--border);

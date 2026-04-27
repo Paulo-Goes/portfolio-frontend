@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/navbar.css" />
     <link rel="stylesheet" href="css/home.css" />
     <link rel="stylesheet" href="css/education.css" />
+    <link rel="stylesheet" href="css/experience.css" />
     <link rel="stylesheet" href="css/skills.css" />
     <link rel="stylesheet" href="css/projects.css" />
     <link
@@ -20,10 +21,11 @@
       <a href="index.html" class="nav-logo">PAULO SÉRGIO</a>
       <div class="nav-links">
         <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <!-- <a href="#projects">Projects</a> -->
         <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
         <div class="nav-divider"></div>
-        <a href="games.html">Games</a>
+        <!-- <a href="games.html">Games</a> -->
         <a href="contact.html">Contact me</a>
       </div>
     </nav>
@@ -38,8 +40,11 @@
             AND MORE
           </h1>
           <p class="home-sub">
-            Passionate about clean code and reliable systems. Crafting backends
-            with Java and Spring Boot, and bringing them to life on the web.
+            Hi, I'm Paulo Sérgio, I'm a Software Developer, working with
+            technologies like Java, Spring Boot, PostgreSQL and others (see
+            <a href="#skills" class="home-link">skills</a> section), and welcome
+            to my website. Besides coding, I also like infrastructure and DevOps
+            and I'm always looking to improve my skills.
           </p>
           <div class="home-tags">
             <span>Java</span>
@@ -84,23 +89,161 @@
       </div>
     </section>
 
+    <section id="experience">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">Where I've been</span>
+          <h2 class="section-title">EXPERIENCE</h2>
+        </div>
+        <div class="experience-list">
+          <div class="experience-card">
+            <div class="experience-top">
+              <div class="experience-left">
+                <span class="experience-title"
+                  >Information Technology Intern</span
+                >
+                <a
+                  href="https://www.gprt.ufpe.br/"
+                  target="_blank"
+                  class="experience-company"
+                  >Grupo de Pesquisa em Redes e Telecomunicações - GPRT</a
+                >
+              </div>
+              <div class="experience-right">
+                <span class="experience-date">AUG 2024 - FEB 2025</span>
+                <span class="experience-type">Internship</span>
+              </div>
+            </div>
+
+            <ul class="experience-bullets">
+              <span class="experience-bullets-tittle">Cluster Migration</span>
+              <li>
+                <span class="star-label">S</span> The existing Proxmox cluster
+                was outdated across its physical nodes, posing stability and
+                security risks.
+              </li>
+              <li>
+                <span class="star-label">T</span> Responsible for migrating the
+                nodes to the latest Proxmox major release, rebuilding the
+                cluster and migrating all VMs to the new enviroment.
+              </li>
+              <li>
+                <span class="star-label">A</span> Backed up all VMs, reformatted
+                each node with the latest Proxmox release, rebuilt the cluster
+                and restored all VMs to the new enviroment and restored backup
+                schedules.
+              </li>
+              <li>
+                <span class="star-label">R</span> Successfully migrated the
+                cluster with no service downtime or data loss, bringing the
+                enviroment up to date and improving stability and security.
+              </li>
+            </ul>
+
+            <ul class="experience-bullets">
+              <span class="experience-bullets-tittle"
+                >Backup & High Availability Setup</span
+              >
+              <li>
+                <span class="star-label">S</span> The virtualized enviroment
+                required a revisit of its backup strategy and lacked a failover
+                protection for critical services.
+              </li>
+              <li>
+                <span class="star-label">T</span> Update backup schedules and
+                configure high availability for critical VMs.
+              </li>
+              <li>
+                <span class="star-label">A</span> Reconfigured backup schedules
+                on various frequencies and configured HA for the critical
+                services.
+              </li>
+              <li>
+                <span class="star-label">R</span> Improved the backup strategy
+                and implemented failover protection for critical services.
+              </li>
+            </ul>
+
+            <ul class="experience-bullets">
+              <span class="experience-bullets-tittle">DNS Redundancy</span>
+              <li>
+                <span class="star-label">S</span> The network relied on a single
+                physical DNS server and a secondary virtual DNS.
+              </li>
+              <li>
+                <span class="star-label">T</span> Setup a secondary physical DNS
+                server to improve redundancy.
+              </li>
+              <li>
+                <span class="star-label">A</span> Configured and integrated a
+                secondary physical DNS server and set the existing virtual DNS
+                as a tertiary fallback.
+              </li>
+              <li>
+                <span class="star-label">R</span> Improved DNS fault tolerance,
+                ensuring continued network name resolution.
+              </li>
+            </ul>
+
+            <ul class="experience-bullets">
+              <span class="experience-bullets-tittle">Monitoring</span>
+              <li>
+                <span class="star-label">S</span> Recent changes into the
+                infrastructure needed to be reflected in the Zabbix monitoring
+                solution.
+              </li>
+              <li>
+                <span class="star-label">T</span> Maintain full visibility over
+                the network.
+              </li>
+              <li>
+                <span class="star-label">A</span> Added Zabbix agents to the
+                recently reformatted machines and integrated them into the
+                monitoring solution.
+              </li>
+              <li>
+                <span class="star-label">R</span> Ensured continued monitoring
+                coverage across the infrastructure.
+              </li>
+            </ul>
+
+            <ul class="experience-bullets">
+              <span class="experience-bullets-tittle"
+                >Hardware Maintenance</span
+              >
+              <li>
+                <span class="star-label">S</span> Several workstations across
+                the workplace were faulty or broken.
+              </li>
+              <li>
+                <span class="star-label">T</span> Diagnose issues and restore
+                machines to working condition.
+              </li>
+              <li>
+                <span class="star-label">A</span> Built and diagnosed PCs,
+                replaced faulty components and made initial configurations for
+                immediate use.
+              </li>
+              <li>
+                <span class="star-label">R</span> Kept workstations operational,
+                minimizing downtime and ensuring a productive work environment.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="skills">
       <div class="section-container">
         <div class="section-header">
           <span class="section-tag">What I know</span>
           <h2 class="section-title">Skills</h2>
         </div>
-        <div class="skills-area" id="skills-area">
-          <div class="cat-row" id="cat-row"></div>
-          <div class="exp-panel" id="exp-panel">
-            <div class="exp-top">
-              <span class="exp-active-label" id="exp-label"></span>
-              <div class="exp-other-btns" id="exp-others"></div>
-            </div>
-            <div class="exp-content" id="exp-content">
-              <div class="skill-grid" id="skill-grid"></div>
-            </div>
-          </div>
+        <div class="cat-row" id="cat-row"></div>
+        <div class="skills-panel" id="skills-panel">
+          <div class="skills-panel-title" id="panel-title"></div>
+          <div class="skill-grid" id="skill-grid"></div>
         </div>
       </div>
     </section>
