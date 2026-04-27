@@ -14,18 +14,20 @@ Make a fullstack portfolio website where:
   - My Skills filtered by the relevant industry area(DevOps, Software Development, etc...)
   - Contact me
   - Current & past projects
-  - Add a few simple games with a leaderboard to show the top 10 scores
+  - Add a few simple games with a leaderboard page to see the scores
 
 ## Implemented Features
 
 - Landing page
   - Education
+  - Experience
   - Skills
-- Placeholders for other features
+- Contact me
+  - Email, LinkedIn and Github
+  - Send me a message
 
 ## Planned features
 
-- Add contact me page
 - Add projects section
 - Add games page
 
