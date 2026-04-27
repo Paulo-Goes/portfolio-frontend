@@ -49,6 +49,15 @@ async function loadSkills() {
     categoriesData = await res.json();
     categoriesData.sort((a, b) => a.name.localeCompare(b.name));
 
+    categoriesData.forEach((c) => {
+      if (c.skills) {
+        c.skills.sort((a, b) => {
+          if (b.level !== a.level) return b.level - a.level;
+          return a.name.localeCompare(b.name);
+        });
+      }
+    });
+
     const row = document.getElementById("cat-row");
     row.innerHTML = categoriesData
       .map(
