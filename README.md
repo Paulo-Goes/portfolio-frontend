@@ -23,7 +23,7 @@ Make a fullstack portfolio website where:
   - Experience
   - Skills
 - Contact me
-  - Email, LinkedIn and Github
+  - Email, LinkedIn and Github redirects
   - Send me a message
 
 ## Planned features
@@ -34,5 +34,4 @@ Make a fullstack portfolio website where:
 ## Much later/Non confirmed features
 
 - Add a export CV functionality
-  - User would receive a .pdf CV taking into consideration the specified skill area
-- Quote of the day
+  - User would receive a .pdf or .docx CV taking into consideration the specified skill area
