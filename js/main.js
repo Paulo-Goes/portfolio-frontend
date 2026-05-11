@@ -1,5 +1,3 @@
-const API = "https://portfolio-backend-xed8.onrender.com";
-
 let categoriesData = [];
 let currentCat = null;
 
