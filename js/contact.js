@@ -1,5 +1,3 @@
-const API = "https://portfolio-backend-xed8.onrender.com";
-
 function setupCounter(inputId, counterId, max) {
   const input = document.getElementById(inputId);
   const counter = document.getElementById(counterId);
