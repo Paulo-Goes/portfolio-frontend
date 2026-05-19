@@ -117,18 +117,3 @@
   padding: 1px 7px;
   flex-shrink: 0;
 }
-
-@media (max-width: 768px) {
-  #experience {
-    padding: 80px 24px;
-  }
-
-  .experience-top {
-    flex-direction: column;
-    gap: 8px;
-  }
-
-  .experience-right {
-    align-items: flex-start;
-  }
-}
