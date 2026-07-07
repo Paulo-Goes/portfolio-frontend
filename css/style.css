@@ -62,7 +62,6 @@ body {
   color: var(--text-primary);
 }
 
-/* Sections that share the same padding/bg pattern */
 #home,
 #skills,
 #experience {
@@ -81,7 +80,7 @@ body {
   padding: 100px 60px;
 }
 
-/* ============================================================
+/* ============================================================ 
    CARD SHARED STYLES
    (project-card, education-card, experience-card)
    ============================================================ */
@@ -102,7 +101,6 @@ body {
   border-color: var(--accent);
 }
 
-/* Shared top-row layout (project & experience) */
 .project-top,
 .experience-top {
   display: flex;
@@ -112,7 +110,6 @@ body {
   gap: 1rem;
 }
 
-/* Shared left column (project & experience) */
 .project-left,
 .experience-left {
   display: flex;
@@ -120,7 +117,6 @@ body {
   gap: 4px;
 }
 
-/* Shared right column (project & experience) */
 .project-right,
 .experience-right {
   display: flex;
@@ -130,7 +126,6 @@ body {
   flex-shrink: 0;
 }
 
-/* Shared date badge (project & experience) */
 .project-date,
 .experience-date {
   font-size: 12px;
@@ -140,7 +135,6 @@ body {
   white-space: nowrap;
 }
 
-/* Shared type label (project & experience) */
 .project-type,
 .experience-type {
   font-size: 11px;
@@ -149,7 +143,6 @@ body {
   color: var(--text-secondary);
 }
 
-/* Shared card title (project, education, experience) */
 .project-title,
 .education-degree,
 .experience-title {
@@ -158,7 +151,6 @@ body {
   color: var(--text-primary);
 }
 
-/* Shared secondary link/label (project, education, experience) */
 .project-link,
 .education-institution,
 .experience-company {
@@ -173,6 +165,16 @@ body {
 .education-institution:hover,
 .experience-company:hover {
   color: var(--accent);
+}
+
+.project-link-icon {
+  display: flex;
+  align-items: center;
+}
+
+.project-link-icon svg {
+  width: 32px;
+  height: 32px;
 }
 
 /* ============================================================
